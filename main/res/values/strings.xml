@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Labyrinth</string>
+    <string name="action_settings">Settings</string>
+    <string name="button_play">play</string>
+    <string name="button_help">help</string>
+    <string name="button_stop">stop</string>
+
+    <string name="chooseMaze">Choose the maze type</string>
+    <string name="instructions">Tilt the device to move the ball through the maze, till you reach the arrival</string>
+    <string name="instructionsEdge">Tilt the device to move the ball through the maze, till you reach the arrival, and DON\'T TOUCH THE WALLS!</string>
+    <string name="victory">Victory!</string>
+    <string name="gameover">Game over</string>
+    <string name="classicDFS">Classic&#10;DFS</string>
+    <string name="classicKruskal">Classic&#10;Kruskal</string>
+    <string name="advancedDFS">Advanced&#10;DFS</string>
+    <string name="advancedKruskal">Advanced&#10;Kruskal</string>
+    <string name="title_activity_instructions">Instructions</string>
+    <string name="title_activity_game">Game</string>
+    <string name="title_activity_levels">Levels</string>
+    <string name="title_activity_victory">Result</string>
+    <string name="title_activity_game_over">GameOver</string>
+    <string name="title_activity_levels2">Levels2</string>
+    <string name="title_activity_levels3">Levels3</string>
+    <string name="title_activity_levels4">Levels4</string>
+</resources>

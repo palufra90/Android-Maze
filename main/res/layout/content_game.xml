@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/colorPrimaryDark"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:id="@+id/level"
+        android:textSize="35sp"
+        android:layout_weight="1"
+        android:layout_marginStart="@dimen/fab_margin" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_weight="0"
+        android:id="@+id/timer"
+        android:layout_marginEnd="@dimen/fab_margin"/>
+    </LinearLayout>
+
+
+    <!-- Here is where we put the SurfaceView, in a frame so that we can
+         stack other views on top of it. -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1">
+
+
+        <com.example.francesca.labyrinth.MyGLSurfaceView
+            android:id="@+id/glSurfaceViewID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:layout_gravity="center">
+
+        <Button
+            android:id="@+id/button_stop"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:background="@drawable/stopbtn"
+            android:onClick="stop"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dip" />
+
+        <Button
+            android:id="@+id/button_pause"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:background="@drawable/pausebtn"
+            android:onClick="pause"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"/>
+
+        <Button
+            android:id="@+id/button_play"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="@drawable/playbtn"
+            android:onClick="play"
+            android:layout_alignParentBottom="true"/>
+
+    </LinearLayout>
+
+</LinearLayout>
